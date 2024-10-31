@@ -64,6 +64,10 @@ namespace Persistence.Repositories
             {
                 results = _forklifts.AsQueryable().Where(filter).ToList();
             }
+            else
+            {
+                results = _forklifts;
+            }
 
             return results;
         }
