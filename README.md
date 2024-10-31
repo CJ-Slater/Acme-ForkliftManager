@@ -1,3 +1,5 @@
+Acme Forklift manager/back-end for the Acme user Portal. A .NET Web API project for monitoring and managing forklifts.
+
 **Local setup instructions**
 
 1. Run the solution in your chosen IDE. Ensure that the API is running on 'http://localhost:7127/' as that is what the forklift user portal is expecting.
