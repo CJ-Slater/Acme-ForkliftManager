@@ -55,7 +55,7 @@ namespace Application.Requests.Forklifts
             };
         }
 
-        //Thought about putting these into an external file or a service to avoid magic strings, or could even make a service - however I don't know if any other part of the system would expect a string response for movement
+        //Thought about putting these into an external file, or could even make a service - however I don't know if any other part of the system would expect a string response for movement
         //or if it is only needed for this request, which is used by the UI.
         private List<string> getMovementResultString(MoveForkliftRequest command, ForkliftMovementResult result, ref List<string> movementResults)
         {

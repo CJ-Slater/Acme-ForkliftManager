@@ -33,7 +33,7 @@ namespace API.Controllers
             return Ok(await _mediator.Send(new ResetObstaclesRequest()));
         }
 
-        //Apologies - I had planned to add a call to this in the front-end so that you could set these from the site, but don't think I will have time to do it.
+        //I had planned to add a call to this in the front-end so that you could set these from the site, but don't think I will have time to do it.
         //If you need to set the obstacles, you can do it in the in memory repo, or on the swagger API.
         [HttpPatch("set-obstacles")]
         public async Task<IActionResult> SetObstacles([FromBody] HashSet<ObstaclePosition> positions)
